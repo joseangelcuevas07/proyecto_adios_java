@@ -13,7 +13,21 @@ public class AdiosJava{
         
         int resta = restar(numero1, numero2);
         System.out.println("La resta es: " + resta);
+
+              //clase persona
+        Persona persona1;
+        persona1 = new Persona("Roberto Degante Lopez");
+
+        persona1.setEdad(35);
+        persona1.setTelefono("257-896-36-75");
+        persona1.setGenero('M');
+        persona1.setDireccion("calle 2 de Abril #16");
+
+        System.out.println("===================================================");
+        System.out.println("DATOS DE LA PERSONA");
+        System.out.println(persona1.toString());
     }
+    
 
     public static int restar (int n1, int n2){
         return n1 - n2;
